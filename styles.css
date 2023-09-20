@@ -1,0 +1,63 @@
+body.index-body {
+    background-image: url("images/Moonman.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0; /* Lägg till detta för att ta bort sidmarginaler */
+}
+
+body.about-body {
+    background-color: black; /* Bakgrundsfärg för About Me-sidan */
+    color: wheat; /* Textfärg för About Me-innehållet */
+    display: flex; /* Använd flexbox för att centrera innehållet vertikalt */
+    justify-content: center; /* Centrera innehållet horisontellt */
+    align-items: center; /* Centrera innehållet vertikalt */
+    margin: 0; /* Ta bort sidmarginaler */
+}
+
+.about-me-h1, .about-me-h2, .about-me-p {
+    color: wheat;
+}
+#menu {
+    /* Placera menyen på vänster sida i mitten */
+    position: fixed;
+    top: 50%; /* Placera den vertikalt i mitten */
+    left: 0;
+    transform: translateY(-50%); /* Justera så att den är i mitten vertikalt */
+    display: flex;
+    flex-direction: column; /* Lägg till flex-riktning vertikalt för att stapla menyelementen */
+    align-items: flex-start; /* Justera så att menyelementen börjar från toppen */
+    padding: 0;
+    background-color: transparent;
+    z-index: 1; /* Ange ett z-index-värde för att placera menyn ovanför andra element */
+}
+
+.menu-item {
+    color: white;
+    font-size: clamp(2rem, 2vw, 8rem);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px; /* Lägg till mellanrum mellan menyelementen */
+    transition: opacity 400ms ease;
+}
+
+/* Lägg till margin-top för att skapa utrymme mellan meny och text */
+.about-content {
+    margin-top: 80px; /* Du kan justera detta värde efter behov */
+    margin-left: 150px;
+}
+
+#menu-items {
+    /* Ta bort marginalen från vänster och använd padding om nödvändigt */
+    padding-left: 1rem;
+    position: relative;
+}
+
+#menu-items:hover .menu-item {
+    opacity: 0.3;
+}
+
+#menu-items:hover .menu-item:hover {
+    opacity: 1;
+}

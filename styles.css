@@ -46,6 +46,56 @@ body.Gallery{
     font-size: 1.5rem; /* Ändra textstorleken efter behov */
 }
 
+/* Your existing CSS styles */
+
+.contact-content {
+    background-color: black;
+    color: wheat;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background-color: lightcoral;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+
 .about-me-h1, .about-me-h2, .about-me-p {
     color: wheat;
 }

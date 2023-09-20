@@ -17,22 +17,17 @@ body.about-body {
 }
 
 .index-content {
-    background-image: url("images/Moonman.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: auto; /* Centrera innehållet vertikalt och horisontellt */
     text-align: center;
     color: white;
+    position: absolute; /* Använd absolut positionering */
+    top: 50%; /* Placera elementets överkant i mitten av fönstret */
+    left: 50%; /* Placera elementets vänsterkant i mitten av fönstret */
+    transform: translate(-50%, -50%); /* Justera så att elementet är centrerat */
 }
 
 .index-heading {
-    font-size: 2rem; /* Ändra textstorleken efter behov */
+    font-size: 2.5rem; /* Ändra textstorleken efter behov */
 }
 
 .index-subheading {

@@ -16,6 +16,18 @@ body.about-body {
     margin: 0; /* Ta bort sidmarginaler */
 }
 
+body.hobbies{
+    background-color: black;
+}
+
+body.Contact{
+    background-color: black;
+}
+
+body.Gallery{
+    background-color: black;
+}
+
 .index-content {
     margin: auto; /* Centrera innehållet vertikalt och horisontellt */
     text-align: center;
@@ -78,4 +90,24 @@ body.about-body {
 
 #menu-items:hover .menu-item:hover {
     opacity: 1;
+}
+
+
+/* Stilar för mindre skärmar (mobil) */
+@media (max-width: 768px) {
+    body.index-body {
+        height: auto; /* Ta bort fast höjd för mobilvisning */
+    }
+
+    .index-content {
+        padding: 20px; /* Lägg till lite utrymme på mobilskärmar */
+    }
+
+    .index-heading {
+        font-size: 2rem; /* Justera textstorlek för mobilvisning */
+    }
+
+    .index-subheading {
+        font-size: 1.2rem; /* Justera textstorlek för mobilvisning */
+    }
 }
